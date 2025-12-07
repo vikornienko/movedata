@@ -9,7 +9,7 @@ repos:
         always_run: true
       - id: ruff-format
         name: ruff-format
-        entry: uv run ruff format --fix
+        entry: uv run ruff format --check
         language: system
         types: [python]
         always_run: true
