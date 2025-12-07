@@ -33,3 +33,4 @@ uv add --dev pytest pytest-qt ruff pre-commit
 ## Использование pre-commit
 1. Добавить файл с конфигурацией .pre-commit-config.yaml.
 2. Запустить команду uv run pre-commit install
+3. Запустить команду uv run pre-commit run --all-files
