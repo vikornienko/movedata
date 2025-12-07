@@ -23,9 +23,13 @@
 - pytest;
 - pre-commit;
 - loguru.
+
 Для установки зависимостей использовались команды:
 ```powershell
 uv add PySide6 loguru
 uv add --dev pytest pytest-qt ruff pre-commit
 ```
 
+## Использование pre-commit
+1. Добавить файл с конфигурацией .pre-commit-config.yaml.
+2. Запустить команду uv run pre-commit install
