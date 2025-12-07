@@ -4,4 +4,15 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12.10"
-dependencies = []
+dependencies = [
+    "loguru>=0.7.3",
+    "pyside6>=6.10.1",
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.5.0",
+    "pytest>=9.0.2",
+    "pytest-qt>=4.5.0",
+    "ruff>=0.14.8",
+]
