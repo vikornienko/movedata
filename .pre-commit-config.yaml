@@ -9,7 +9,17 @@ repos:
         always_run: true
       - id: ruff-format
         name: ruff-format
-        entry: uv run ruff format --check
+        entry: uv run ruff format
         language: system
         types: [python]
+        always_run: true
+
+  - repo: local
+    hooks:
+      - id: pytest
+        name: pytest
+        entry: uv run pytest
+        language: system
+        types: [python]
+        pass_filenames: false
         always_run: true
